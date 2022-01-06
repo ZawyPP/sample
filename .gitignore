@@ -12,6 +12,6 @@
 /captures
 .externalNativeBuild
 .cxx
-values.xml
+values1.xml
 app-release.aab
 google-services.json
