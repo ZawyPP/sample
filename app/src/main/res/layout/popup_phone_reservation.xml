@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:background="@color/colorAccent">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/caveat_brush"
+        android:textSize="20dp"
+        android:text="@string/check_vacancies" />
+
+    <ImageButton
+        android:id="@+id/phoneButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:layout_margin="10dp"
+        android:src="@drawable/button_selector"
+        android:background="@android:color/transparent"/>
+
+
+
+</LinearLayout>

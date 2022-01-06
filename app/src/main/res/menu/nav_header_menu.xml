@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/profil_in_menu"
+        android:icon="@drawable/profil"
+        android:title="@string/profil" />
+
+    <item android:id="@+id/my_orders"
+        android:icon="@drawable/ticket"
+        android:title="MOJE REZERVÁCIE" />
+
+    <item android:id="@+id/aboutus"
+        android:icon="@drawable/book_eco"
+        android:title="@string/aboutus" />
+
+    <item android:id="@+id/contact"
+        android:icon="@drawable/contact"
+        android:title="@string/contact" />
+
+<!--    <item android:id="@+id/queries"-->
+<!--        android:icon="@drawable/query"-->
+<!--        android:title="@string/queries"/>-->
+
+    <item android:id="@+id/oou"
+        android:icon="@drawable/info"
+        android:title="Ochrana osobných údajov"/>
+
+    <item android:id="@+id/menuSignOut"
+        android:icon="@drawable/sign_out"
+        android:title="ODHLÁSIŤ"/>
+
+
+</menu>

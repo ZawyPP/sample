@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vítanie Vás v aplikácii Lahodnosti"
+        android:fontFamily="@font/caveat_brush"
+        android:textAlignment="center"
+        android:textSize="28dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aplikácia je v režime testovania a postupne budú pridané ďalšie funkcie, preto prosíme v prípade problémov nás informujte.\n"
+        android:fontFamily="@font/caveat_brush"
+        android:layout_marginHorizontal="10dp"
+        android:textSize="20dp"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        app:srcCompat="@drawable/popupfirst" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Funkciu online rezervácii aktivujete verifikáciou telefonného čísla vo svojom profile.\nTen aj s ďalšími možnosťami nájdete v ľavom menu, ktoré aktiujete kliknutím na ikonu vľavo od nápisu Lahodnosti(viď. obrazok)\nTelefónne číslo zadávajte vo formáte +421\n\nSpráva rezervácií, ktoré boli vykonané online, je možná cez 'Moje Rezervácie'. Preto odporúčame po rezervovaní skontrolovať či je rezervácia zapísana v tomto zozname"
+        android:fontFamily="@font/caveat_brush"
+        android:layout_marginHorizontal="10dp"
+        android:textSize="20dp"/>
+
+
+
+</LinearLayout>
+</ScrollView>

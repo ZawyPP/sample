@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/orderRow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="5dp"
+    android:descendantFocusability = "blocksDescendants"
+    android:background="@drawable/order_list_row"
+    >
+
+    <LinearLayout
+        android:id="@+id/todayEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:id="@+id/orderDate"
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:fontFamily="@font/caveat"
+                android:text="16.03.2021" />
+
+            <TextView
+                android:id="@+id/orderKind"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_kind"
+                android:paddingHorizontal="4dp"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:fontFamily="@font/caveat_brush"
+                android:text="SEBAROZVOJ"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/oName"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.65"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caveat_brush"
+                    android:text="Meno Umelca" />
+
+                <TextView
+                    android:id="@+id/orderTime"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caveat"
+                    android:text="Začiatok o  " />
+
+                <TextView
+                    android:id="@+id/orderTimeStart"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:maxLines="1"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="4dp"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caveat"
+                    android:text="18:00"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caveat"
+                    android:text="Počet rezervácii" />
+
+                <TextView
+                    android:id="@+id/oCount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.15"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text="2 x"
+                    android:paddingEnd="5dp"
+                    android:fontFamily="@font/caveat"
+                    android:layout_gravity="top"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/ePriceTextView1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caveat"
+                    android:text="Cena" />
+
+                <TextView
+                    android:id="@+id/oPrice1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:text="18 €/ks"
+                    android:paddingEnd="5dp"
+                    android:fontFamily="@font/caveat"
+                    android:layout_gravity="top"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/orderDisable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        android:textAlignment="center"
+        android:rotation="9"
+        android:textColor="@color/design_default_color_error"
+        android:fontFamily="@font/caveat"
+        android:layout_centerInParent="true"
+        android:alpha="0.8"
+        android:visibility="gone"
+        android:text="UDALOSŤ ZRUŠENÁ!" />
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearTab">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLay"
+        app:tabIndicatorHeight="5dp"
+        app:tabIndicatorGravity="stretch"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/tabSelectedTextColor"
+        app:tabIconTint="@color/tabIconTint"
+        app:tabIndicator="@color/colorPrimary"
+        app:tabIndicatorColor="@color/tabIndicatorColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="textStart"
+        android:gravity="start"
+        app:tabTextAppearance="@style/MineCustomTabText"
+        android:background="@android:color/white">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/restaurant"
+            android:text="@string/tab0"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/heaven"
+            android:text="@string/tab1" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/today"
+            android:text="@string/tab2" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/book_eco"
+            android:text="@string/tab3" />
+
+    </com.google.android.material.tabs.TabLayout>
+</LinearLayout>

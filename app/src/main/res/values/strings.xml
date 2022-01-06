@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">Lahodnosti</string>
+    <string name="phone">+421948866549</string>
+
+    <string name="open">Otvoriť</string>
+    <string name="close">Zavrieť</string>
+
+    <!--    Bočný panel - Navigation view -->
+    <string name="contact">Kontakt</string>
+    <string name="aboutus">O nás</string>
+    <string name="queries">Dotazy</string>
+
+    <!--    tab panel-->
+    <string name="tab0">Reštaurácia</string>
+    <string name="tab1">Lahodné nebo</string>
+    <string name="tab2">Denné Menu</string>
+    <string name="tab3">Kniha \nPotravín</string>
+
+    <!--    Stránka reštaurácie-->
+    <string name="restaurant_text1">JEDZME S PÔVODOM</string>
+    <string name="restaurant_text2">AKO "KUCHTÍME"</string>
+    <string name="restaurant_text3">POĎME SA SPOLU ROZPRÁVAŤ</string>
+    <string name="restaurant_text">ZDRAVÝ SPÔSOB STRAVOVANIA</string>
+    <string name="restaurant_text4">RAW VEGAN VEGETARIAN RESTAURANT</string>
+
+    <!--    Kontakt-->
+    <string name="contact_phone_title">Telefón :</string>
+    <string name="contact_phone_1">+421 948 474 406</string>
+    <string name="contact_phone_2">+421 948 866 549</string>
+    <string name="contact_mail_title">Email :</string>
+    <string name="contact_email_1">lahodnosti@lahodnosti.sk</string>
+    <string name="contact_email_2">lahodnenebo@gmail.com</string>
+    <string name="contact_adress_title">Adresa :</string>
+    <string name="contact_adress">Námestie svätého Egídia 3633/44 Poprad"</string>
+
+
+    <!--    Events      "&#160;" SPACE -->
+    <string name="voluntary_price">Dobrovoľné vstupné&#160;</string>
+    <string name="price1">Cena \n(rezervácia): </string>
+    <string name="price2">(na mieste): </string>
+
+    <!--  URL   "&amp;" !! -->
+    <string name="no_event_photo">https://firebasestorage.googleapis.com/v0/b/lahodnosti-admin.appspot.com/o/app_img%2FLogo_Lahodnosti.png?alt=media&amp;token=72492de3-67d4-443e-9be0-d315af10100c</string>
+
+    <string name="bookFoodTitle">KNIHA PÔVODU \nLAHODNÝCH POTRAVÍN</string>
+    <string name="bookFoodText">"Reštaurácia LAHODNOSTI je výnimočná v mnohých ohľadoch a jedným z nich sú suroviny z ktorých jedlá pripravujeme.
+        \nZa chuťou ktorú na tanieri dostanete nie je len šikovnosť našich kuchárov, ale aj to odkiaľ potraviny pochádzajú a akým spôsobom boli vypestované. \nSme teda hrdí, že poznáme príbeh každého producenta/pestovateľa, ktorého produkty sa k nám dostávajú a tak vieme garantovať tú najvyššiu kvalitu.
+        \nLokálnosť je pre nás veľmi dôležitá a tak vznikla 'KNIHA PÔVODU LAHODNÝCH POTRAVÍN'"</string>
+    <string name="no_subtitle">...žiadne bližšie info...</string>
+    <string name="OOU">https://firebasestorage.googleapis.com/v0/b/lahodnosti-admin.appspot.com/o/OOU.htm?alt=media&amp;token=4edf63cd-d428-4b63-a8fd-2735f61b2f8a</string>
+
+    <!--  Phone call-->
+    <string name="call_permission">Je potrebné mať povolenie pre používanie hlasových hovorov!</string>
+    <string name="call_error">CHYBA PRI SPUSTENI TELEFONÁTU!</string>
+
+    <string name="profil">Profil</string>
+    <string name="kto">KTO?</string>
+    <string name="o">ČO?</string>
+    <string name="kde">KDE?</string>
+    <string name="ako">AKO?</string>
+    <string name="pre_o">PREČO?</string>
+    <string name="aktualny_tyzden">Aktualný týždeň</string>
+    <string name="nadpis_nazov_udalosti">NADPIS NAZOV UDALOSTI</string>
+    <string name="overujem">Overujem....</string>
+    <string name="problem">Problém s pripojením na server, overte internetové pripojenie, alebo využite telefonickú rezerváciu.</string>
+    <string name="no_free">Ľutujeme, ale všetky miesta sú momentálne obsadené</string>
+    <string name="count_reservation">Aktuálny počet rezervácii :</string>
+    <string name="reservation_name">Rezervácia na meno:</string>
+    <string name="reservation_phone">Telefónne číslo:</string>
+    <string name="reservation_count_user">Počet rezervovaných miest :</string>
+    <string name="reservation_add_info">Doplniť info:</string>
+    <string name="reservation_add_info2">(Ak je potrebné doplňte stručnú poznámku k objednávke)</string>
+    <string name="check_vacancies">Overiť dostupnosť a \nrezervovať telefonicky \n\n +421 948 866 549</string>
+    <string name="users_profil">UŽÍVATEĽSKÝ PROFIL</string>
+    <string name="users_profil_name">Meno :</string>
+    <string name="users_profil_name_hint">meno pre rezervácie</string>
+    <string name="users_profil_name_reservation">Meno pod ktorým bude rezervácia vedená a ktorým sa na mieste identifikujete (po potvrdení nebude možné zmeniť)</string>
+    <string name="users_profil_email">email :</string>
+    <string name="users_profil_email_2">Email pod ktorým ste prihlásený</string>
+    <string name="users_profil_tel">tel.č. :</string>
+    <string name="users_profil_tel_format">vo formáte +421 904 000 000</string>
+    <string name="users_profil_tel_profil_format_2">Telefónne číslo vo formáte +421... ... ... (Pre SR: miesto prvej \'0\' zadajte \'+421\' )</string>
+    <string name="users_profil_verificate">Verifikovať tel.č.</string>
+    <string name="users_profil_verificate_online">Pre online rezervácie je nutné overiť/verifikovať tel.č..</string>
+    <string name="users_profil_online_reservation">Online rezervácie</string>
+    <string name="users_profil_info_o">V prípade ak sa na rezervovanej udalosti nemôžete zúčastniť, rezerváciu prosím zrušte, ak tak neurobíte môže Vám byť možnosť online rezervácii natrvalo zablokovaná.\nAk bol bezdôvodne zrušený prístup k online rezerváciam kontaktujte správcu</string>
+    <string name="vacancies_now">Voľných miest:</string>
+    <string name="verif_tel_num">Overenie telefonného čísla</string>
+    <string name="tel_number">Telefónne číslo</string>
+    <string name="tel_num_format">+421xxxxxxxxx</string>
+    <string name="send_code">Zaslať overovací kód</string>
+    <string name="sms_code">Overovací kód</string>
+    <string name="insert_code">Vložte overovací kód z SMS</string>
+    <string name="check">OVERIŤ</string>
+    <string name="version">Lahodnosti app v</string>
+    <string name="verified">OVERENÉ</string>
+    <string name="unverified">NEOVERENÉ</string>
+    <string name="allowed">POVOLENÉ</string>
+    <string name="notallowed">NEPOVOLENÉ</string>
+    <string name="errornumber_verif">Číslo nie je zadané správne!</string>
+    <string name="errornumber_verif2">Formát čísla musí byť (pre SR) : +421xxxxxxxxx</string>
+    <string name="save">Uložiť a verifikovať</string>
+    <string name="call_phone_number">+421948866549</string>
+    <string name="error_verif_code">Musí obsahovať 6 číslic</string>
+    <string name="tel_n_was_verif">Telefónne číslo bolo overené</string>
+    <string name="please_wait">Prosím čakajte...</string>
+    <string name="please_wait2">Overujem, čakajte prosím ...</string>
+    <string name="error_verif_crash">\"Číslo nemohlo byť overené! \"</string>
+    <string name="verif_code_error_or">Zle zadaný overovací kód, alebo je toto telefónne číslo už registované</string>
+    <string name="check_exist_order">Overujem existenciu objednávky, prosím čakajte...</string>
+    <string name="delete_reservation_q">Skutočne chcete túto rezerváciu zrušiť?</string>
+    <string name="yes_delete">ÁNO ZRUŠIŤ REZERVÁCIU</string>
+    <string name="authorization_false">Autorizácia neúspešná</string>
+    <string name="authorization_false_message">Chyba spojenia. \nProsím, opakujte prihlásenie...</string>
+    <string name="repeat">OPAKOVAŤ</string>
+    <string name="textCountLunch">Počet obedov (Classic):</string>
+    <string name="call_lah">Chcete volať do Lahodnosti?</string>
+    <string name="no_order_edit">\"Túto rezerváciu už nemôžete upravovať \"</string>
+    <string name="no_connect_for_edit_order">\"NA ÚPRAVU OBJEDNÁVKY JE NUTNÉ INTERNETOVÉ PRIPOJENIE!\n(alebo nás kontaktujte telefonicky) \"</string>
+
+
+</resources>

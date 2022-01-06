@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/layout_info"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+
+    <TextView
+        android:id="@+id/dateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/textFontFamily"
+        android:textSize="18dp"
+        android:text="00.00.0000 00:00 00:00" />
+
+    <TextView
+        android:id="@+id/kind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="18dp"
+        style="@style/textFontFamily"
+        android:text="PODUJATIE" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_below="@id/dateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:fontFamily="@font/caveat_brush"
+        android:text="@string/nadpis_nazov_udalosti" />
+
+
+    <TextView
+        android:id="@+id/infoMain"
+        android:layout_below="@id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"
+        style="@style/textFontFamily"
+        android:text="@string/no_subtitle" />
+
+    <TextView
+        android:id="@+id/ePrice1"
+        android:layout_below="@id/infoMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        style="@style/textFontFamily"
+        android:text="***w" />
+
+    <TextView
+        android:id="@+id/ePrice2"
+        android:layout_below="@id/ePrice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        style="@style/textFontFamily"/>
+
+    <ImageView
+        android:id="@+id/zoomPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:alpha="0.02"/>
+
+    <ImageView
+        android:id="@+id/reservationEvent"
+        android:layout_below="@id/infoMain"
+        android:layout_alignParentRight="true"
+        android:layout_height="55dp"
+        android:layout_width="wrap_content"
+        android:adjustViewBounds="true"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ticket"/>
+
+    <TextView
+        android:id="@+id/reservationStatus"
+        android:layout_below="@id/infoMain"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/caveat_brush"
+        android:textSize="12dp"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_below="@id/infoMain"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="27dp"
+        style="?android:attr/progressBarStyle"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

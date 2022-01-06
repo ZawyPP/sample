@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorAccent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/version">
+
+
+        <ImageView
+            android:id="@+id/phone"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            app:srcCompat="@drawable/phone"
+            android:padding="10dp"
+            android:background="@color/colorAccent"/>
+        <ImageView
+            android:id="@+id/network"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            app:srcCompat="@drawable/network"
+            android:padding="10dp"
+            android:background="@drawable/button_unactive_selector"/>
+        <RelativeLayout
+            android:id="@+id/nowStatus"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/text0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:fontFamily="@font/caveat_brush"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/vacancies_now"/>
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_below="@id/text0"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.5"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/caveat_brush"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="\???"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/flipperForType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/popup_phone_reservation"/>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/popup_network_reservation"/>
+    </ViewFlipper>
+</LinearLayout>

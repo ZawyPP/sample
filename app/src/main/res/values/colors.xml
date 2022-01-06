@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#004203</color>
+    <color name="colorPrimaryDark">#022903</color>
+    <color name="colorAccent">#39610A</color>
+    <color name="version">#87A588</color>
+    <color name="darkYellow">#FF9800</color>
+    <color name="darkRed">#710800</color>
+    <color name="brown">#502702</color>
+
+<!--    tablayout-->
+    <color name="tabIndicatorColor">#004203</color>
+    <color name="tabSelectedTextColor">#FFFFFF</color>
+    <color name="tabIconTint">#0F6813</color>
+
+    <color name="buttonReservationNetworkUnactive">#7C8F7D</color>
+    <color name="editText">#DFDFDF</color>
+    <color name="unactiveOnlineReservation">#572110</color>
+
+    <color name="orderOk">#85002301</color>
+    <color name="orderWrong">#A1450000</color>
+    <color name="orderToday">#DC217A24</color>
+    <color name="orderTodayBlick">#0D5710</color>
+
+    <color name="colorSplash">#4ABCBCBC</color>
+    <color name="postStory">#67B56B</color>
+</resources>

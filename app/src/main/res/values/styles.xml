@@ -1,0 +1,58 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+<!--        <item name="android:homeAsUpIndicator">@drawable/book_eco</item>-->
+
+    </style>
+
+<!--    <style name="CustomActivityTheme" parent="AppTheme">-->
+<!--        <item name="android:homeAsUpIndicator">@drawable/book_eco</item>-->
+<!--    </style>-->
+
+
+    <style name="roundedImageViewRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">12sp</item>
+        <item name="android:minLines">2</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/caveat_brush</item>
+    </style>
+
+
+    <style name="textDailyMenu" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontFamily">@font/patrick_hand</item>
+    </style>
+
+
+    <style name="textFontFamily">
+        <item name="android:fontFamily">@font/caveat_brush</item>
+    </style>
+
+    <style name="textFontFamilyBook">
+        <!--                        android:textSize="20dp"-->
+        <!--                        android:fontFamily="@font/caveat"-->
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontFamily">@font/caveat_brush</item>
+    </style>
+
+
+    <style name="textFontRestaurant">
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontFamily">@font/patrick_hand</item>
+    </style>
+
+    <style name="textFontRestaurantTitle">
+        <item name="android:textSize">24dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/patrick_hand</item>
+    </style>
+</resources>

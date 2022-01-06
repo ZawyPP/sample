@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profil"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/radius_header">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dp"
+            android:paddingLeft="15dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/profil_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="19dp"
+                android:textColor="@color/version"
+                tools:ignore="RtlCompat" />
+            <TextView
+                android:id="@+id/profil_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/version"
+                android:singleLine="true"
+                android:textSize="14dp"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profil_photo"
+            android:layout_margin="0dp"
+            android:padding="15dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+            app:strokeColor="#C5C5C5"
+            app:strokeWidth="0.2dp"
+            />
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom"
+        android:layout_marginEnd="15dp"
+        android:textAlignment="viewEnd"
+        android:alpha="0.6"
+        android:textSize="12dp"
+        android:textColor="@color/version"
+        tools:ignore="RtlCompat" />
+</LinearLayout>

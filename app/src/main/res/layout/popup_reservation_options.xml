@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorAccent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/caveat_brush"
+            android:text=" " />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:alpha="0.9"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/caveat_brush"
+                android:textSize="11dp"
+                android:textAlignment="textEnd"
+                android:text="Normálne porcie(ks):" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/caveat_brush"
+                android:textSize="11dp"
+                android:textAlignment="textEnd"
+                android:text="Polovičné porcie(ks)" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxClassic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/caveat_brush"
+            app:buttonTint="@android:color/white"
+            android:text="CLASSIC" />
+
+        <LinearLayout
+            android:id="@+id/lin1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:alpha="0.3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:layout_marginRight="5dp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/caveat_brush"
+                android:textSize="16dp"
+                android:textAlignment="textEnd"
+                android:text="Porcie:" />
+            <EditText
+                android:id="@+id/classicPortion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/caveat_brush"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:maxLength="1"
+                android:enabled="false"
+                android:textSize="20dp"
+                android:background="@color/version"
+                android:hint="x" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/caveat_brush"
+                android:textSize="16dp"
+                android:textAlignment="textEnd"
+                android:text="½ 🍛" />
+
+            <EditText
+                android:id="@+id/classicHalfPortion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:layout_marginRight="10dp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/caveat_brush"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:maxLength="1"
+                android:enabled="false"
+                android:textSize="20dp"
+                android:background="@color/version"
+                android:hint="x" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxVegan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/caveat_brush"
+            app:buttonTint="@android:color/white"
+            android:text="Vegan" />
+
+        <LinearLayout
+            android:id="@+id/lin2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:alpha="0.3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:layout_marginRight="5dp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/caveat_brush"
+                android:textSize="16dp"
+                android:textAlignment="textEnd"
+                android:text="Porcie:" />
+            <EditText
+                android:id="@+id/veganPortion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/caveat_brush"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:maxLength="1"
+                android:enabled="false"
+                android:textSize="20dp"
+                android:background="@color/version"
+                android:hint="x" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/caveat_brush"
+                android:textSize="16dp"
+                android:textAlignment="textEnd"
+                android:text="½ 🍛" />
+
+            <EditText
+                android:id="@+id/veganHalfPorion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:layout_marginRight="10dp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/caveat_brush"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:maxLength="1"
+                android:enabled="false"
+                android:textSize="20dp"
+                android:background="@color/version"
+                android:hint="x" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxGlutenfree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/caveat_brush"
+            app:buttonTint="@android:color/white"
+            android:text="Bezlepkové" />
+
+        <LinearLayout
+            android:id="@+id/lin3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:alpha="0.3"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:layout_marginRight="5dp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/caveat_brush"
+                android:textSize="16dp"
+                android:textAlignment="textEnd"
+                android:text="Porcie:" />
+            <EditText
+                android:id="@+id/celiaticPortion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/caveat_brush"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:maxLength="1"
+                android:enabled="false"
+                android:textSize="20dp"
+                android:background="@color/version"
+                android:hint="x" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/caveat_brush"
+                android:textSize="16dp"
+                android:textAlignment="textEnd"
+                android:text="½ 🍛" />
+
+            <EditText
+                android:id="@+id/celiaticHalfPortion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:layout_marginRight="10dp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/caveat_brush"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:maxLength="1"
+                android:enabled="false"
+                android:textSize="20dp"
+                android:background="@color/version"
+                android:hint="x" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxVeganGlutenfree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/caveat_brush"
+            app:buttonTint="@android:color/white"
+            android:text="Vegan+Bezlepkové" />
+
+        <LinearLayout
+            android:id="@+id/lin4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:alpha="0.3"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:layout_marginRight="5dp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/caveat_brush"
+                android:textSize="16dp"
+                android:textAlignment="textEnd"
+                android:text="Porcie:" />
+            <EditText
+                android:id="@+id/veganCeliaticPortion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/caveat_brush"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:maxLength="1"
+                android:enabled="false"
+                android:textSize="20dp"
+                android:background="@color/version"
+                android:hint="x" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/caveat_brush"
+                android:textSize="16dp"
+                android:textAlignment="textEnd"
+                android:text="½ 🍛" />
+
+            <EditText
+                android:id="@+id/veganCeliaticHalfPorion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:layout_marginRight="10dp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/caveat_brush"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:maxLength="1"
+                android:enabled="false"
+                android:textSize="20dp"
+                android:background="@color/version"
+                android:hint="x" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/deliveryLin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkDelivery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/caveat_brush"
+            app:buttonTint="@android:color/white"
+            android:text="Donáška" />
+
+        <EditText
+            android:id="@+id/deliveryAdress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/caveat_brush"
+            android:paddingHorizontal="3dp"
+            android:layout_marginRight="5dp"
+            android:textSize="16dp"
+            android:background="@color/version"
+            android:alpha="0.3"
+            android:enabled="false"
+            android:hint="Len Poprad, Svit a okolie (Ulica, popisné číslo, mesto(časť))" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:fontFamily="@font/caveat_brush"
+            android:paddingLeft="10dp"
+            android:text="@string/reservation_add_info"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+        <EditText
+            android:id="@+id/infoToOrder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:gravity="top"
+            android:background="@color/version"
+            android:fontFamily="@font/caveat_brush"
+            android:textSize="16dp"
+            android:textColor="@android:color/white"
+            android:hint="@string/reservation_add_info2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.4"
+            android:fontFamily="@font/caveat_brush"
+            android:paddingLeft="10dp"
+            android:text="Počet obedov: "
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/reservationOptionsCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.6"
+            android:fontFamily="@font/caveat_brush"
+            android:paddingLeft="10dp"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/cancelOrder2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/button_selector3"
+            android:visibility="gone"
+            android:background="@android:color/transparent"/>
+        <ImageButton
+            android:id="@+id/placeAnOrder2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/button_selector2"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layButtonText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/caveat_brush"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="ZRUŠIŤ REZERVÁCIU"
+            android:textColor="@android:color/white"
+            android:alpha="0.8"
+            android:textSize="12dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/caveat_brush"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="UPRAVIŤ"
+            android:textColor="@android:color/white"
+            android:alpha="0.8"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.drawerlayout.widget.DrawerLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/toolbar_logo"/>
+
+        <include
+            android:id="@+id/upInclude"
+            layout="@layout/action_bar_transparent"
+            android:layout_alignParentTop="true"
+            android:layout_alignBottom="@id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></include>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/upInclude"
+            android:layout_above="@id/downInclude">
+
+            <LinearLayout
+                android:id="@+id/center_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact"
+                    android:textSize="40dp"
+                    android:fontFamily="@font/patrick_hand"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="0.3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="22dp"
+                        android:fontFamily="@font/patrick_hand"
+                        android:text="@string/contact_phone_title" />
+
+                    <LinearLayout
+                        android:layout_weight="0.7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/patrick_hand"
+                            android:text="@string/contact_phone_1" />
+
+                        <TextView
+                            android:id="@+id/phoneTwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/patrick_hand"
+                            android:text="@string/contact_phone_2" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="0.3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="22dp"
+                        android:fontFamily="@font/patrick_hand"
+                        android:text="@string/contact_mail_title" />
+
+                    <LinearLayout
+                        android:layout_weight="0.7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/emailOne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/patrick_hand"
+                            android:text="@string/contact_email_1" />
+
+                        <TextView
+                            android:id="@+id/emailTwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/patrick_hand"
+                            android:text="@string/contact_email_2" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="0.3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="22dp"
+                        android:fontFamily="@font/patrick_hand"
+                        android:text="@string/contact_adress_title" />
+
+                    <LinearLayout
+                        android:layout_weight="0.7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/patrick_hand"
+                            android:text="@string/contact_adress" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--                <com.google.android.gms.maps.MapView-->
+                <!--                    android:id="@+id/mapView"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="350dp"-->
+                <!--                    />-->
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <include
+            android:id="@+id/downInclude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/tabs_down"
+            android:layout_alignParentBottom="true" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header"
+        android:background="@drawable/radius"
+
+        app:menu="@menu/nav_header_menu"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        />
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+
+
+
+
+
+
+
+
+
